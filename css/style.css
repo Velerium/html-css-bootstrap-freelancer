@@ -72,6 +72,18 @@ nav {
     margin-bottom: 20px;
 }
 
+#portfolio, #about {
+    position: relative;    
+}
+
+#about {
+    bottom: 56px;  /*These position the anchors where they should be. */
+}                  /*Same as fixed navbar height*/ 
+
+#portfolio {
+    bottom: 26px;  /*navbar height - padding */
+}
+
 [class*="item-"] {
     height: 250px;
     border-radius: 15px;

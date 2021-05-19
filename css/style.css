@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
 }
 
 .container-fluid {
@@ -12,9 +13,47 @@ body {
     color: #000;
 }
 
-.nav-bar {
-    height: 90px;
+.row {
+    margin-bottom: 30px;
+}
+
+.colored {
     background-color: #2c3e50;
+}
+
+h1, h6 {
+    font-weight: 700;
+}
+
+.star::before {
+    content: "----------------";
+    text-decoration: line-through 3px;
+}
+
+.star i {
+    margin: 10px 20px 20px;
+}
+
+.star::after {
+    content: "----------------";
+    text-decoration: line-through 3px;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 0 24px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.navbar-collapse {
+    flex: 0 0 auto;  /*Overrides the default grow value*/
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
 }
 
 .intro, .about {
@@ -24,17 +63,29 @@ body {
 }
 
 .intro {
-    height: 500px;
+    margin-top: 56px;
 }
 
-.row {
-    margin-bottom: 30px;
+.intro img {
+    position: relative;
+    width: 200px;
+    margin-bottom: 20px;
 }
 
 [class*="item-"] {
     height: 250px;
     border-radius: 15px;
     margin-bottom: 24px;
+    position: relative;
+    min-width: 300px;
+}
+
+.examples img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
 }
 
 .item-1 {
@@ -62,8 +113,12 @@ body {
 }
 
 .info {
-    background-color: teal;
+    text-align: left;
     margin-bottom: 5px;
+}
+
+.contact .col-12 {
+    text-align: center;
 }
 
 .contact .col-8 {
@@ -85,7 +140,18 @@ body {
 
 .contact input, .contact textarea {
     border: none;
+    border-bottom: 1px solid lightgrey ;
     outline: none;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.contact input {
+    margin-bottom: 30px;
+}
+
+.contact textarea {
+    margin-bottom: 5px;
 }
 
 input::placeholder, textarea::placeholder {
@@ -98,35 +164,63 @@ input::placeholder, textarea::placeholder {
 }
 
 [class*="button"] {
-    width: 90px;
-    padding: 10px 0;
+    padding: 8px 0;
     background-color: #1abc9c;
     color: white;
     border: 1px solid #fff;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .button-download {
+    width: 120px;
     margin: 0 auto;
 }
 
+.button-contact {
+    width: 70px;
+}
+
+footer {
+    color: #fff;
+}
+
+
 footer .row {
-    background-color: #3a546d;
     margin: 0;
 }
 
-footer .row div {
+footer .info-2 {
     background-color: #3a546d;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .info-2 div {
+    margin-bottom: 24px;
+}
+
+footer .info-2 .social div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+footer .info-2 span {
+    color: #1abc9c;
 }
 
 footer .dark {
     background-color: #2c3e50;
     height: 80px;
+    text-align: center;
+    line-height: 80px;
 }
 
-footer .dark {
-    align-items: center;
-}
-
-footer .row div:last-child {
+footer .info-2 div:last-child {
     background-color: initial;
 }

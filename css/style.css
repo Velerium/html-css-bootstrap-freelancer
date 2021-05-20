@@ -34,7 +34,7 @@ h1, h6 {
     margin: 10px 20px 20px;
 }
 
-.star::after {
+.star::after {   /*Ottavio wanted us to use ::before and ::after...*/
     content: "----------------";
     text-decoration: line-through 3px;
 }
@@ -67,7 +67,6 @@ nav {
 }
 
 .intro img {
-    position: relative;
     width: 200px;
     margin-bottom: 20px;
 }
@@ -84,44 +83,10 @@ nav {
     bottom: 26px;  /*navbar height - padding */
 }
 
-[class*="item-"] {
-    height: 250px;
+.examples img {
     border-radius: 15px;
     margin-bottom: 24px;
-    position: relative;
-    min-width: 300px;
-}
-
-.examples img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-}
-
-.item-1 {
-    background-color: #ba4b63;
-}
-
-.item-2 {
-    background-color: #1ea4b6;
-}
-
-.item-3 {
-    background-color: #140f0f;
-}
-
-.item-4 {
-    background-color: #1c83c1;
-}
-
-.item-5 {
-    background-color: #0e38b5;
-}
-
-.item-6 {
-    background-color: #ccb2a3;
+    width: 100%;
 }
 
 .info {
